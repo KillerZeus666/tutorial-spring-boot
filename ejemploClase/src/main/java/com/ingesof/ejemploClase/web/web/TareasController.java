@@ -21,4 +21,9 @@ public class TareasController {
         return tareas.findAll(); 
     
     }
+    //Agregar una tarea
+    public Tarea agregarTarea(Tarea tarea){
+        //recibe objeto Tarea, lo graba en la DB 
+        return tareas.save(tarea); 
+    }
 }
