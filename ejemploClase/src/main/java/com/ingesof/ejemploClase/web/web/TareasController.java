@@ -6,7 +6,7 @@ import com.ingesof.ejemploClase.web.accesoDatos.TareaRepository;
 
 @RestController
 public class TareasController {
-    TareaRepository tareas; 
+    private TareaRepository tareas=null; 
 
     public TareasController(TareaRepository tareas){ 
         this.tareas= tareas; 
